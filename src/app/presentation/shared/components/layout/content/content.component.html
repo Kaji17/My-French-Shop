@@ -1,0 +1,16 @@
+<header class="xs:h-2/6 xs:relative xs:bg-no-repeat xs:bg-cover">
+    <app-navbar class="xs:absolute xs:top-0 xs:w-full xs:my-2 xs:fixed xs:z-50"></app-navbar>
+    <nz-carousel nzAutoPlay [nzAutoPlaySpeed]=6000>
+        @for (banniere of bannieres; track bannieres) {
+        <div nz-carousel-content>
+            <img [src]="banniere.image" alt="banniere">
+        </div>
+        }
+    </nz-carousel>
+</header>
+<main>
+    <app-info-delivery></app-info-delivery>
+</main>
+<footer class="xs:bottom-0 xs:left-0 xs:w-full xs:z-50 xs:fixed xs:h-14 p-2 border-t-4 border-lightpurple shadow-xl">
+    <app-toolbar class="xs:flex xs:justify-around xs:items-center"></app-toolbar>
+</footer>
