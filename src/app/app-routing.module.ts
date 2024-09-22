@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LandingPageComponent } from './infrastructure/pages/insecure-layout/landing-page/landing-page.component';
+import { ContentComponent } from './presentation/shared/components/layout/content/content.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: LandingPageComponent,
+    component: ContentComponent,
   }
 ];
 
