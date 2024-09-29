@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContentComponent } from './presentation/shared/components/layout/content/content.component';
 import { acuueiRoutes } from './presentation/shared/routes/accueil.routes';
+import { securityRoutes } from './presentation/shared/routes/security.routes';
 
 
 const routes: Routes = [
@@ -11,6 +12,16 @@ const routes: Routes = [
     children: [
       ...acuueiRoutes
     ]
+  },
+  ...securityRoutes,
+  {
+    path: "",
+    redirectTo: "",
+    pathMatch: "full"
+  },
+  {
+    path: "**",
+    redirectTo: ""
   }
 ];
 
