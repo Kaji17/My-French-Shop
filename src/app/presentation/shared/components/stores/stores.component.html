@@ -1,0 +1,9 @@
+<div class="xs:py-4 xs:w-11/12 xs:mx-auto xs:my-2 rounded-lg">
+    <h1 class="xs:m-0 font-bold">Boutiques à la une</h1>
+
+    <div class="xs:grid xs:grid-rows-2 xs:grid-cols-4 xs:mt-4 gap-6">
+        <div *ngFor="let item of listStores" class="xs:w-14 flex items-center">
+            <img [src]="item.urllogo" alt="item.name" class="rounded-full shadow-lg">
+        </div>
+    </div>
+</div>

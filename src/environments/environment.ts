@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  logoMfs: "./assets/img/logo-mfs.png"
+  logoMfs: "./assets/img/logo-mfs.png",
+  baseUrl: "http://localhost:9830"
 };
 
 /*

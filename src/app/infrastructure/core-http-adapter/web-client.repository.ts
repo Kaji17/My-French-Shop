@@ -1,8 +1,10 @@
 import { Observable } from "rxjs";
 import { ClientRepository } from "../../business/repositories/client.repository";
 import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
 
-export class WebClientRepository extends ClientRepository {
+@Injectable({providedIn: 'root'})
+export class WebClientRepositoryAdapter extends ClientRepository {
 
   constructor(
     private http: HttpClient,
