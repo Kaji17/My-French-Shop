@@ -1,3 +1,4 @@
+import { environment } from './../../../../../environments/environment.prod';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-
+  logoMfs: string = environment.logoMfs
 }

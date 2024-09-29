@@ -11,6 +11,7 @@ import fr from '@angular/common/locales/fr';
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideHttpClient } from '@angular/common/http';
+import { HTTP_REPOSITORIES_ADAPTERS } from './infrastructure/core-http-adapter';
 
 registerLocaleData(fr);
 
@@ -31,6 +32,7 @@ registerLocaleData(fr);
     { provide: NZ_I18N, useValue: fr_FR },
     provideAnimationsAsync(),
     provideHttpClient(),
+    ...HTTP_REPOSITORIES_ADAPTERS
   ],
   bootstrap: [AppComponent],
 })
