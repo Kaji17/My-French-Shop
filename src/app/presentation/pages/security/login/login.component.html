@@ -1,1 +1,40 @@
-<p>login works!</p>
+<div class="xs:flex xs:flex-col h-screen">
+    <div class="xs:h-2/6 xs:flex justify-center items-center flex-col">
+        <img [src]="logoMfs" alt="" class="h-full xs:h-20">
+        <div>
+            <h1 class="text-lg font-bold text-center">Bienvenu sur My French Shop 👋</h1>
+            <p class="text-center text-xs	xs:px-4">Ne manquez pas l'occasion de faire votre shopping sur vos site favorite au meilleur taux</p>
+        </div>
+    </div>
+    <main class="xs:h-4/6">
+        <div class="xs:flex xs:justify-center xs:flex-col xs:justify-center xs:items-center">
+            <button nz-button nzType="default" [nzSize]="size" nzShape="round" class="xs:w-5/6 xs:text-center xs:pt-2">
+            <div class="xs:flex xs:justify-center xs:items-center xs:text-xs">
+              <img src="./assets/img/Google_logo.png" alt="google_logo" class="xs:w-5 xs:mx-1">
+               Se connecter avec google
+              </div>
+            </button>
+            <button nz-button nzType="default" [nzSize]="size" nzShape="round" class="xs:w-5/6 xs:text-center xs:pt-2 xs:my-2" (click)="loginWithEmail()">
+            <div class="xs:flex xs:justify-center xs:items-center xs:text-xs">
+                <img src="./assets/img/email_icon.webp" alt="google_logo" class="xs:w-5 xs:mx-1"> Se connecter avec email
+            </div>
+            </button>
+        </div>
+
+        <nz-divider nzText="OU"></nz-divider>
+        <div class="xs:flex xs:justify-center xs:flex-col xs:justify-center xs:items-center">
+            <button nz-button nzType="primary" [nzSize]="size" nzShape="round" class="xs:w-5/6 xs:text-center xs:pt-2 xs:my-2 bg-lightpurple" (click)="registerWithEmail()">S'inscrire
+            </button>
+        </div>
+
+        <div class="xs:flex xs:justify-center xs:flex-col xs:justify-center xs:items-center	text-center" style="font-size: 7px;">
+            <p class="xs:w-5/6">En continuant, vous êtes d'accord avec les
+                <a href="/auth" class="font-bold">Termes de Service</a> et la
+                <a href="/auth" class="font-bold">La politique de confidentialité</a>
+            </p>
+        </div>
+    </main>
+</div>
+<footer class=" xs:bottom-0 xs:left-0 xs:w-full xs:z-50 xs:fixed xs:h-14 p-2 border-t-4 border-lightpurple shadow-xl ">
+    <app-toolbar class="xs:flex xs:justify-around xs:items-center "></app-toolbar>
+</footer>
