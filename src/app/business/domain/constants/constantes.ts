@@ -16,20 +16,25 @@ export const BANNIERE_ACCEUIL = [
   }
 ]
 
-export const BOTTOM_BAR_MOBILE =[
+export const BOTTOM_BAR_MOBILE = [
   {
     iconType: "home",
+    path: ""
   },
   {
     iconType: "heart",
+    path: "/my-favorite"
   },
   {
     iconType: "link",
+    path: "/order"
   },
   {
     iconType: "shopping-cart",
+    path: "/cart"
   },
   {
     iconType: "user",
+    path: "/auth"
   },
 ]

@@ -10,10 +10,10 @@ const routes: Routes = [
     path: '',
     component: ContentComponent,
     children: [
-      ...acuueiRoutes
+      ...acuueiRoutes,
+      ...securityRoutes,
     ]
   },
-  ...securityRoutes,
   {
     path: "",
     redirectTo: "",
